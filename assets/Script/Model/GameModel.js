@@ -135,7 +135,7 @@ export default class GameModel {
             return [[], []];
         }
         let curClickCell = this.cells[pos.y][pos.x]; //当前点击的格子
-        let lastClickCell = this.cells[lastPos.y][lastPos.x]; // 上一次点击的格式
+        let lastClickCell = this.cells[lastPos.y][lastPos.x]; // 上一次点击的格子
         this.exchangeCell(lastPos, pos);
         var result1 = this.checkPoint(pos.x, pos.y)[0];
         var result2 = this.checkPoint(lastPos.x, lastPos.y)[0];
